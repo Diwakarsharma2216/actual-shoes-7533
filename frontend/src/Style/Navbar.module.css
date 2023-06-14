@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    gap: 20px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar h1{
+font-weight: 700;
+font-size: 14px;
+width: 100px;
+padding-top: 23px;
+}
+
+.navbar img {
+    padding-left: 20px;
+    width: 200px;
+    margin-top: -5px;
+    align-items: center;
+    height: 80px;
+}
+#btn2{
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 55%;
+    color: white;
+    
+    background-color: blue;
+}
+.hide>p{
+    display: none;
+}
+#btn2:hover + .hide>p{
+    display: block;
+    color:black;
+    margin-top:50px;
+    padding: 4px;
+    border-Radius:5px;
+    font-size: 10px;
+
+    margin-left: -50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.navbar h2{
+    margin-left: -40px;
+    font-size: 14px;
+    margin-top: 23px;
+    align-items: center;
+    font-weight: 700;
+}
+.btn{
+   
+    background-color: white;
+    margin-top: 15px;
+    
+}
+.btn1{
+    background-color: #ffcd1f;
+    margin-top: 15px;
+    align-items: center;
+}
+.btn1:hover{
+    background-color: rgb(250,200,31);
+}
+.btn:hover{
+    background-color: #f6f7fb;
+}
