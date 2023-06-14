@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    gap: 100px;
+    padding-left: 50px;
+    padding-top: 30px;
+    background-color:#f6f7fb;
+}
+.footer h1{
+    font-weight: 700;
+}
+.footer p{
+    font-size: .875rem;
+    margin-top: 10px;
+    font-weight:600;
+}
+.main{
+    display: flex;
+    padding: 35px;
+    background-color:#f6f7fb;
+    justify-content: space-between;
+}
+.main img {
+    width: 150px;
+    height: 70px;
+}
