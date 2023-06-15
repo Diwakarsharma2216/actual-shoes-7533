@@ -32,7 +32,7 @@ app.post("/", async (req, res) => {
 
 	const { message } = req.body;
 try {
-    
+    // this message
     console.log(message)
 	const completion = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
