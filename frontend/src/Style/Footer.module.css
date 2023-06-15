@@ -1,8 +1,9 @@
 .footer{
     display: flex;
     gap: 100px;
+  
     padding-left: 50px;
-    padding-top: 30px;
+    padding-top: 60px;
     background-color:#f6f7fb;
 }
 .footer h1{
@@ -23,3 +24,4 @@
     width: 150px;
     height: 70px;
 }
+

@@ -1,0 +1,271 @@
+.first h1{
+    margin-top: -400px;
+    font-size: 40px;
+    font-weight:bold;
+    width: 500px;
+    margin-left: 170px;
+    color: white;
+}
+.first p{
+    color: white;
+    margin-left: 170px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 530px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 170px;
+    color: white;
+   
+}
+#title{
+    margin-top: 200px;
+    margin-left: 120px;
+    font-size: 35px;
+    font-weight: bold;
+    width: 1000px;
+  
+    text-align: center;
+}
+.third{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+   margin-top: 70px;
+   width: 74%;
+}
+.third h1{
+    
+    font-size: 30px;
+font-weight: bold;
+}
+
+.third p{
+    font-size: 20px;
+    margin-top: 30px;
+    width: 400px;
+    font-weight: 400;
+}
+.btn2{
+    margin-top: 20px;
+    width: 150px;
+   
+}
+.fourth{
+    display: flex;
+    gap: 100px;
+    margin: auto;
+   margin-top: 120px;
+   width: 74%;
+}
+.fourth h1{
+    
+    font-size: 35px;
+font-weight: bold;
+}
+.android{
+   margin-left: -23px;
+   margin-top: 20px; 
+}
+
+.fourth p{
+    font-size: 20px;
+    margin-top: 30px;
+    width: 400px;
+    font-weight: 400;
+}
+.secondsection{
+    margin-top: 40px;
+}
+.five{
+    
+    display: flex;
+    gap: 120px;
+    margin: auto;
+    width: 73%;
+}
+.five div {
+    margin-top: 150px;
+}
+.five div h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.five div p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.inner{
+    display :flex ;
+    gap: 40px;
+    column-gap: -40px;
+}
+.inner div {
+    margin-top: -100px;
+}
+.inner div h1 {
+    font-size: 22px;
+
+}
+
+.inner div p{
+    width: 400px;
+    font-weight: 400;
+    margin-top: -5px;
+    font-size: 1rem;
+}
+#img1{
+    margin-top: -120px;
+}
+
+.inner1{
+    display :flex ;
+    gap: 40px;
+    column-gap: -40px;
+}
+.inner1 div {
+    margin-top: -130px;
+}
+.inner1 div h1 {
+    font-size: 22px;
+
+}
+
+.inner1 div p{
+    width: 400px;
+    font-weight: 400;
+    margin-top: -5px;
+    font-size: 1rem;
+}
+.inner2{
+    display :flex ;
+    gap: 40px;
+    column-gap: -40px;
+}
+.inner2 div {
+    margin-top: -140px;
+}
+.inner2 div h1 {
+    font-size: 22px;
+
+}
+
+.inner2 div p{
+    width: 400px;
+    font-weight: 400;
+    margin-top: -5px;
+    font-size: 1rem;
+}
+#bigimg{
+    height: 650px;
+    width: 1200px;
+}
+#img2{
+    margin-top: -170px;
+}
+#img3{
+    margin-top: -190px;
+}
+
+.head{
+    text-align: 
+    center;
+    font-size: 35px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+.six{
+    
+    display: flex;
+    margin: auto;
+    gap: 38px;
+    margin-top: 60px;
+    width: 74%;
+}
+.six div{
+  border-radius: 3px;
+  padding-bottom: 20px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.six div h1{
+    padding: 20px;
+    font-weight: bold;
+}
+.six div p{
+   padding-left: 20px;
+   font-weight: 400;
+   font-size: 14px;
+   
+}
+.seven{
+    display: flex;
+    margin-top: 60px;
+    gap: 100px;
+    background-color: #dbdfff;
+    padding: 70px 150px 70px 150px;
+}
+.seven div h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.seven div h1{
+    font-weight: bolder;
+    font-size: 33px;
+}
+.seven div p{
+    font-size:1.25rem;
+    line-height: normal;
+    letter-spacing: 1.4;
+    width: 330px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+.btn3{
+    margin-top: 50px;
+   padding: 30px 20px 30px 20px;
+}
+
+.seven div h6{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.seven div h6:hover{
+    color: #ffcd1f;
+}
+.seven div hr{
+    height: 5px;
+    border-radius: 20px;
+    background-color:rgb(61, 156, 124);
+    margin-top: 20px;
+    width: 260px;
+}
+.seven div div:hover{
+    color: #ffcd1f;
+}
+.seven div hr:hover{
+    background-color: #ffcd1f;
+}
+
+#youtube{
+  
+    margin: auto;
+  
+    
+
+}
+#youtube1{
+    margin-top: 35px;
+}
+.youhead{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 70px;
+   
+}
+
