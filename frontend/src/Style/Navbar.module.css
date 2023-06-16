@@ -29,6 +29,32 @@ padding-top: 23px;
 .hide>p{
     display: none;
 }
+
+
+.nav2{
+  display: flex;
+}
+.hover:hover{
+    color: #f43397;
+}
+#drop{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 40px;
+
+  
+}
+.btn{
+    display: flex;
+    gap: 20px;
+   }
+.navbar2 {
+   padding: 10px;
+   margin-top: -10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
 #btn2:hover + .hide>p{
     display: block;
     color:black;
@@ -45,7 +71,7 @@ padding-top: 23px;
     font-size: 14px;
     margin-top: 23px;
     align-items: center;
-    font-weight: 700;
+    font-weight: 500;
 }
 .btn{
    
