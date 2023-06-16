@@ -6,7 +6,10 @@ const Homepage = () => {
   return (
     <div>
       <div className={style.first}>
-        <img src="https://images.prismic.io/quizlet-prod/6aa15201-1bbd-4bab-803d-93e7d2d4110e_Alt+Image+1+%281%29.png?auto=compress,format" alt="" />
+        <div>
+        <img className={style.firstimg} src="https://images.prismic.io/quizlet-prod/6aa15201-1bbd-4bab-803d-93e7d2d4110e_Alt+Image+1+%281%29.png?auto=compress,format" alt="" />
+       <img className={style.mobile} src="https://images.prismic.io/quizlet-prod/18a3a46a-b31f-41cb-b02c-ab857d3daa7d_MobileHero.png?auto=compress,format" alt="" />
+       </div>
      <h1>The best digital flashcards and study tools
         
      </h1>
@@ -29,7 +32,7 @@ const Homepage = () => {
       </div>
       <h1 className={style.youhead}>See our flashcards in action</h1>
       <div id={style.youtube1}>
-        <ReactPlayer id={style.youtube} url="https://youtu.be/E-wY2mJVlu0"/>
+        <ReactPlayer width="63%" style={{height:"200%"}}  id={style.youtube} url="https://youtu.be/E-wY2mJVlu0"/>
       </div>
       <div className={style.fourth}>
       <div>
@@ -148,7 +151,7 @@ const Homepage = () => {
         <hr />
        </div>
         </div>
-        <div>
+        <div className={style.lastimg}>
             <img src="https://images.prismic.io/quizlet-prod/d5b00568-a324-488f-b16b-44480144cb81_Image+for+Text+Callout+%283%29.png?auto=compress,format" alt="" />
         </div>
       </div>

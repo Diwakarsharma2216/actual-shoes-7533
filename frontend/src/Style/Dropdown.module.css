@@ -1,0 +1,20 @@
+.dropdown{
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    border-radius: 20px;
+   
+}
+.subjectitem{
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.subjectitem img {
+    width: 20px;
+}
+.img{
+    width: 300px;
+}
