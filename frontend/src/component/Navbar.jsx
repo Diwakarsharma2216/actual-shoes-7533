@@ -2,13 +2,15 @@ import React from 'react'
 import style from "../Style/Navbar.module.css"
 import { Button, Input } from '@chakra-ui/react'
 import {Link } from "react-router-dom"
+import Dropdown from './Dropdown'
 export const Navbar = () => {
   return (
     <div className={style.navbar}>
       <Link to="/">
       <img src="https://i.imgur.com/LPlbA9y.png" alt="" />
       </Link>
-      <h1>Subject</h1>
+     <Dropdown className={style.subject}/>
+      
       <h2>Expert Solution</h2>
      <Input style={{
       width:"500px",marginTop:"15px",

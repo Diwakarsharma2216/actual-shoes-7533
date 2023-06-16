@@ -1,10 +1,17 @@
 .first h1{
+    
     margin-top: -400px;
     font-size: 40px;
     font-weight:bold;
     width: 500px;
     margin-left: 170px;
     color: white;
+}
+.firstimg{
+    display: block;
+}
+.mobile{
+    display: none;
 }
 .first p{
     color: white;
@@ -260,6 +267,7 @@ font-weight: bold;
 }
 #youtube1{
     margin-top: 35px;
+    height: 100%;
 }
 .youhead{
     text-align: center;
@@ -269,3 +277,232 @@ font-weight: bold;
    
 }
 
+/* Responsive */
+
+@media screen and (min-width:360px) and (max-width:700px) {
+    #title{
+       margin: auto;
+         margin-top: 200px;
+        /* margin-left: 80px; */
+        font-size: 25px;
+        font-weight: bold;
+        width: 250px;
+      
+        text-align: center;
+    }
+    .third{
+        display: block;
+       
+        margin: auto;
+       margin-top: 70px;
+       width: 74%;
+    }
+    .third h1{
+   font-size: 23px
+    }
+    
+    .third p{
+        font-size: 16px;
+        margin-top: 10px;
+        width: 300px;
+     
+    }
+    .third div img {
+        margin-top: 20px;
+    }
+    .youhead{
+        
+        font-size: 24px;
+        margin: auto;
+       
+        margin-top: 70px;
+        width: 300px;
+       
+    }
+    .fourth{
+        display: block;
+       
+    }
+    .fourth h1{
+    
+        font-size: 25px;
+    
+    }
+    .fourth p{
+        font-size: 16px;
+        
+        width: 300px;
+       
+    }
+    .five{
+    
+        display: block;
+        gap: 120px;
+        margin: auto;
+        width: 73%;
+    }
+    .five div h1{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .five div p{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .inner div{
+        width: 200px;
+
+        
+    }
+    .inner div h1{
+        font-size: 15px;
+    }
+    .inner div p{
+        
+width: 200px;
+        font-size: 10px;
+    }
+    #img1{
+        width: 20px;
+    }
+    .inner1 div{
+        width: 200px;
+        
+    }
+    .inner1 div h1{
+        font-size: 15px;
+    }
+    .inner1 div p{
+        
+width: 200px;
+        font-size: 10px;
+    }
+    #img2{
+        width: 25px;
+    }
+    .inner2 div{
+        width: 200px;
+        
+    }
+    .inner2 div h1{
+        font-size: 15px;
+    }
+    .inner2 div p{
+        
+width: 200px;
+        font-size: 10px;
+    }
+    #img3{
+        width: 25px;
+    }
+    .head{
+        font-size: 25px;
+        width: 250px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .six{
+    
+        display: block;
+        margin: auto;
+       column-gap:  38px;
+        margin-top: 60px;
+        width: 74%;
+    }
+    .six div h1{
+        width: 400px;
+       margin: auto;
+        padding-right: 130px;
+        font-weight: bold;
+    }
+    .six div{
+        margin: auto;
+        border-radius: 3px;
+        padding-bottom: 20px;
+        width: 270px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      }
+    .seven{
+        display: block;
+        margin-top: 60px;
+        gap: 100px;
+        background-color: #dbdfff;
+        padding: 70px 150px 70px 150px;
+    }
+    .seven div h2{
+        width: 300px;
+        margin-left: -90px;
+        font-size: 20px;
+       
+    }
+    .seven div h1{
+   width: 400px;
+   margin-left: -90px;
+        font-size: 22px;
+    }
+    .seven div p{
+        font-size:16px;
+       
+        width: 300px;
+        margin-left: -90px;
+        margin-top: 15px;
+        
+    }
+    .btn3{
+        margin-left: -90px; 
+        margin-top: 20px;
+       padding: 30px 20px 30px 20px;
+    }
+    
+    .seven div h6{
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: -90px;
+        width: 300px;
+        font-weight: 500;
+    }
+    
+    .seven div hr{
+       
+        margin-left: -90px;
+       
+        margin-top: 10px;
+       
+    }
+  .lastimg{
+    width: 250px;
+   margin-left: -90px;
+   margin-top: 20px;
+  }
+  .first{
+    display: block;
+  }
+  .firstimg {
+    display: none;
+  }
+  .mobile{
+    display: block;
+    width: 700px;
+    height: 700px;
+  }
+  .first h1{
+    
+  margin-top: -500px;
+    font-size: 41px;
+  color: black;
+    font-weight:bold;
+    width: 300px;
+    margin-left: 50px;
+    color: white;
+}
+.first p{
+    color: white;
+    margin-left: 45px;
+    font-size: 15px;
+    line-break: auto;
+    width: 300px;
+}
+.btn{
+    margin-left: 40px;
+}
+}
