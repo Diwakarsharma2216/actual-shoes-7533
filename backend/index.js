@@ -5,6 +5,9 @@ const bodyParser =require("body-parser")
 require("dotenv").config()
 const cors = require('cors')
 
+
+
+
 const configuration = new Configuration({
 	organization:process.env.organization,
 	apiKey:process.env.apiKey,
@@ -12,7 +15,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const { userRouter } = require("./routes/user.routes")
-const { postRotuter } = require("./routes/post.routes")
+const { fleshRouter } = require("./routes/fleshcar.routes");
 
 const app=express()
 
@@ -23,12 +26,15 @@ app.use(express.json())
 // #### USER ROUTER ######
 app.use("/users",userRouter)
 
-// #### POST ROUTER ######
-app.use("/posts",postRotuter)
+
+// #### fleshcard Router #####
+
+app.use("/flesh",fleshRouter)
 
 
 
-app.post("/", async (req, res) => {
+// ##### OpenAi 😊 ########
+app.post("/ask", async (req, res) => {
 
 	const { message } = req.body;
 try {
@@ -48,9 +54,7 @@ try {
     res.send(error.message)
 }
 	
-
 });
-
 
 
 app.listen(process.env.PORT,async()=>{
