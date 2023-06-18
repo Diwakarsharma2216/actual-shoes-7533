@@ -2,9 +2,16 @@ import { Button } from '@chakra-ui/react'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import style from "../Style/HomePage.module.css"
+import Navbar2 from './Dropdown'
+import Footer from './Footer'
+import { Navbar } from './Navbar'
 const Homepage = () => {
   return (
+   <>
+   
+
     <div>
+      
       <div className={style.first}>
         <div>
         <img className={style.firstimg} src="https://images.prismic.io/quizlet-prod/6aa15201-1bbd-4bab-803d-93e7d2d4110e_Alt+Image+1+%281%29.png?auto=compress,format" alt="" />
@@ -155,7 +162,10 @@ const Homepage = () => {
             <img src="https://images.prismic.io/quizlet-prod/d5b00568-a324-488f-b16b-44480144cb81_Image+for+Text+Callout+%283%29.png?auto=compress,format" alt="" />
         </div>
       </div>
+    
     </div>
+
+    </>
   )
 }
 
