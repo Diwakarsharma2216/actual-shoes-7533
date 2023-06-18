@@ -56,6 +56,7 @@ const handleclick=()=>{
   axios.post("http://localhost:4200/users/login",state)
   .then((res)=>{
     console.log(res)
+    alert("Login Succesfully😎")
     localStorage.setItem("token",res.data.token)
   }).catch((err)=>{
     console.log(err.message)
