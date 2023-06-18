@@ -20,6 +20,7 @@ import { useReducer } from 'react';
 import { Navbar } from './Navbar';
 import Footer from './Footer';
 import { Navigate, useNavigate } from 'react-router-dom';
+import Navbar2 from './Navbar2';
 
 
 
@@ -54,7 +55,7 @@ export default function LoginPage() {
 
 const handleclick=()=>{
    
-  axios.post("http://localhost:4200/users/login",state)
+  axios.post("https://actual-shoes-api.onrender.com/users/login",state)
   .then((res)=>{
     console.log(res)
     alert("Login Succesfully😎")
@@ -68,7 +69,7 @@ const handleclick=()=>{
   const {email,password}=state
 
   return (<>
-<Navbar />
+<Navbar2 />
   <Flex
     minH={'100vh'}
     align={'center'}

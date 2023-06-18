@@ -3,7 +3,7 @@
    min-width: 100%;
     grid-template-columns: repeat(5,1fr);
     padding: 60px;
-    background-color:#252626;
+    background-color:white;
 }
 body{
     min-width: 100%;

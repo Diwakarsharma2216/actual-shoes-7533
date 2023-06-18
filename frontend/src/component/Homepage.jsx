@@ -2,13 +2,13 @@ import { Button } from '@chakra-ui/react'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import style from "../Style/HomePage.module.css"
-import Navbar2 from './Dropdown'
+import Navbar2 from "../component/Navbar2"
 import Footer from './Footer'
-import { Navbar } from './Navbar'
+
 const Homepage = () => {
   return (
    <>
-   <Navbar />
+   <Navbar2 />
 
     <div>
       

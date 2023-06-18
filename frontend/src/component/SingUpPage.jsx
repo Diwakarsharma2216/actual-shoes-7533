@@ -25,7 +25,7 @@ import { SiLinkedin, SiMessenger } from 'react-icons/si';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import axios from "axios"
 import Footer from './Footer';
-import { Navbar } from './Navbar';
+import Navbar2 from './Navbar2';
 
 
 const iniitalstate={
@@ -70,7 +70,7 @@ const reducer=(state,action)=>{
     const [state,dispach]=useReducer(reducer,iniitalstate)
 
     const handleclick= ()=>{
-    axios.post("http://localhost:4200/users/register",state)
+    axios.post("https://actual-shoes-api.onrender.com/users/register",state)
     .then((res)=>{
     alert("user Register Succesfully 😎")
   console.log(res)
@@ -83,7 +83,7 @@ const reducer=(state,action)=>{
     const {email,password,firstname,img}=state
     return (
         <>
-<Navbar />
+<Navbar2 />
         <Box    bgColor="#f7e9f">
       <Flex
         minH={'100vh'}

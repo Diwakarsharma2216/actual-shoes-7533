@@ -4,7 +4,7 @@ import style from "../Style/Navbar.module.css"
 import { Button, Input } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown'
-const Navbar = () => {
+const Navbar2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -44,4 +44,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
