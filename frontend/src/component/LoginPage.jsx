@@ -19,6 +19,7 @@ import axios from 'axios';
 import { useReducer } from 'react';
 import { Navbar } from './Navbar';
 import Footer from './Footer';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 
@@ -49,7 +50,7 @@ const reducer=(state,action)=>{
 }
 export default function LoginPage() {
   const [state,dispach]=useReducer(reducer,iniitalstate)
-
+  const navigate = useNavigate();
 
 const handleclick=()=>{
    
@@ -58,8 +59,10 @@ const handleclick=()=>{
     console.log(res)
     alert("Login Succesfully😎")
     localStorage.setItem("token",res.data.token)
+    navigate("/singleuserPage")
   }).catch((err)=>{
     console.log(err.message)
+    alert("Wrong Crendential 😒")
   })
   }
   const {email,password}=state

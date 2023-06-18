@@ -16,7 +16,7 @@ const TypewriterEffect = ({ data }) => {
     }
   }, [currentIndex, data]);
 
-  return <Text fontSize={{base:"21px",md:"30px"}} color='tomato'>
+  return <Text fontSize={{base:"21px",md:"30px"}} color='white'>
   {text}
 </Text>
 };
