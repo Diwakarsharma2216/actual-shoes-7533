@@ -1,8 +1,17 @@
 
+import { Button, Container, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import Navbar2 from './Dropdown';
+import axios from 'axios';
+import TypewriterEffect from './TypewritterEffect';
+import { Navbar } from './Navbar';
+import Footer from './Footer';
 
 const SingleUser = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [data,setdata]=useState("")
+  const [flag,setflag]=useState(false)
+  const [responseData, setResponseData] = useState('');
   const totalSlides = 6; // Total number of slides
   const slidesToShow = 3; // Number of slides to show at a time
   const images = ['https://mentorathome.com/wp-content/uploads/2023/02/NCERT-Book-Class-8-Maths-1024x576.webp', 'https://cdn1.byjus.com/wp-content/uploads/2023/05/NCERT-Books-for-Class-10.png', 'https://mentorathome.com/wp-content/uploads/2023/02/NCERT-Book-Class-8-Maths-1024x576.webp', 'https://cdn1.byjus.com/wp-content/uploads/2023/05/NCERT-Books-for-Class-10.png', 'https://www.ncertbooks.guru/wp-content/uploads/2020/09/ncert-books-for-class-12-maths-chapter-1-relations-and-functions.jpeg', 'https://mentorathome.com/wp-content/uploads/2023/02/NCERT-Book-Class-8-Maths-1024x576.webp']; // Replace with your image URLs
@@ -17,13 +26,51 @@ const SingleUser = () => {
 
   const visibleSlides = images.slice(currentSlide, currentSlide + slidesToShow);
 
+  function fetchfun(){
+    return   axios.post("https://actual-shoes-api.onrender.com/ask",{message:data})
+      .then((res)=>{
+        console.log(res)
+        setResponseData(res.data.completion.content)
+      })
+      .catch((err)=>console.log(err))
+    }
+    const handlesubmit=(e)=>{
+      if(responseData){
+        setflag(false)
+      }
+  e.preventDefault()
+  fetchfun().then(()=>{
+    setflag(true)
+    setdata("")
+  })
+  
+  
+    }
+  
+
+
   return (
+  <> 
+ <Navbar />
     <div>
+     
       <div style={{ backgroundColor: 'lightblue', padding: '20px', width: "80%", margin: "auto", borderRadius: "10px", borderTop: "20px" }}>
         <h1 style={{ color: "rgb(42, 41, 40) ", textAlign:"center", fontWeight: "bold", fontSize: "30px", width: 'auto' }}  >Start your learning journey from today. Best wishes!</h1>
       </div>
       <br />
-
+     {/* write here  */}
+     <Container maxW={"container.lg"} mt={"2"} mb={"12"}>
+      <Text fontSize={{base:"xl",md:"4xl"}} color={"Teal"} fontWeight={"bold"}>Please put your question in the mysteries box.</Text>
+      <div className="App">
+      <form onSubmit={handlesubmit}>
+        <input onChange={(e)=>setdata(e.target.value)} value={data} name='data' type='text' placeholder='Ask Here' style={{width:"40%",height:"40px",margin:"20px"}} />
+        <Button colorScheme='teal' variant='outline'><input type='submit' /></Button>
+      </form>
+      <hr></hr>
+ {flag ? <TypewriterEffect data={responseData} />  : data ?<Text fontSize={{base:"21px",md:"50px"}} color={"red.200"}>Wait few Sec after Clicking😁</Text> :""}
+    </div>
+    </Container >
+     {/* my code end here  */}
       <div  >
         <h1 style={{ width: 'auto', textAlign: 'left', marginLeft: "170px", fontSize: "30px", fontWeight: "bold" }}>Achievements</h1>
         <div style={{ border: "1px solid yellow", width: "80%", backgroundColor: "rgb(212, 255, 189)", height: "200px", margin: "auto", borderRadius: "10px" }}>
@@ -71,6 +118,8 @@ const SingleUser = () => {
         <button style={{ border: "1px solid gray", borderRadius: "10px", backgroundColor: "rgb(230, 230, 230)", marginRight: "20px", width: "60px" }} onClick={nextSlide}>Next</button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -12,11 +12,12 @@ import SingleUser from './component/SingleUser';
 function App() {
   return (
     <div >
-    
+{/*     
 <Navbar2/>
 <Homepage/>
-<Footer/>
-
+<Footer/> */}
+<SingleUser />
+{/* <AllRoutes /> */}
 {/*  My code Here ! */}
 {/* <LoginPage /> */}
 {/* <Homepage /> */}
