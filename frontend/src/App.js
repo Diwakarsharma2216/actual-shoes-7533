@@ -13,11 +13,9 @@ function App() {
   return (
     <div >
     
-{/* <Navbar2/>
+<Navbar2/>
 <Homepage/>
 <Footer/>
-<AllRoutes /> */}
-<SingleUser />
 
 {/*  My code Here ! */}
 {/* <LoginPage /> */}
