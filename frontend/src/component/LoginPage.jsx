@@ -17,6 +17,8 @@ import {
 import axios from 'axios';
 
 import { useReducer } from 'react';
+import { Navbar } from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -62,7 +64,7 @@ const handleclick=()=>{
   const {email,password}=state
 
   return (<>
-
+<Navbar />
   <Flex
     minH={'100vh'}
     align={'center'}
@@ -114,6 +116,6 @@ const handleclick=()=>{
       </Box>
     </Stack>
   </Flex>
-   
+   <Footer />
     </>);
 }

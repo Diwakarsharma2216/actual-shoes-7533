@@ -8,7 +8,7 @@ import { Navbar } from './Navbar'
 const Homepage = () => {
   return (
    <>
-   
+   <Navbar />
 
     <div>
       
@@ -164,7 +164,7 @@ const Homepage = () => {
       </div>
     
     </div>
-
+<Footer />
     </>
   )
 }

@@ -12,15 +12,7 @@ import SingleUser from './component/SingleUser';
 function App() {
   return (
     <div >
-{/*     
-<Navbar2/>
-<Homepage/>
-<Footer/> */}
-<SingleUser />
-{/* <AllRoutes /> */}
-{/*  My code Here ! */}
-{/* <LoginPage /> */}
-{/* <Homepage /> */}
+    <AllRoutes />
     </div>
   );
 }

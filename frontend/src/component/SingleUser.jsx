@@ -1,5 +1,5 @@
 
-import { Button, Container, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Navbar2 from './Dropdown';
 import axios from 'axios';
@@ -52,7 +52,7 @@ const SingleUser = () => {
   return (
   <> 
  <Navbar />
-    <div>
+    <Box mt={"4"}>
      
       <div style={{ backgroundColor: 'lightblue', padding: '20px', width: "80%", margin: "auto", borderRadius: "10px", borderTop: "20px" }}>
         <h1 style={{ color: "rgb(42, 41, 40) ", textAlign:"center", fontWeight: "bold", fontSize: "30px", width: 'auto' }}  >Start your learning journey from today. Best wishes!</h1>
@@ -117,7 +117,7 @@ const SingleUser = () => {
         ))}
         <button style={{ border: "1px solid gray", borderRadius: "10px", backgroundColor: "rgb(230, 230, 230)", marginRight: "20px", width: "60px" }} onClick={nextSlide}>Next</button>
       </div>
-    </div>
+    </Box>
     <Footer />
     </>
   );

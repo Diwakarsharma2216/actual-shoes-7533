@@ -24,6 +24,8 @@ import { SiLinkedin, SiMessenger } from 'react-icons/si';
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import axios from "axios"
+import Footer from './Footer';
+import { Navbar } from './Navbar';
 
 
 const iniitalstate={
@@ -81,14 +83,14 @@ const reducer=(state,action)=>{
     const {email,password,firstname,img}=state
     return (
         <>
-
-        <Box    bgColor="#fae4fb">
+<Navbar />
+        <Box    bgColor="#f7e9f">
       <Flex
         minH={'100vh'}
         align={'center'}
         justify={'center'}
         bg={useColorModeValue('gray.50', 'gray.800')}
-        bgColor="#fae4fb"
+        bgColor="#f7e9f"
         >
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
@@ -193,7 +195,7 @@ const reducer=(state,action)=>{
       </Stack>
     </Center>
     </Box>
-    
+    <Footer />
       </>
     );
   }
