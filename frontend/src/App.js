@@ -8,11 +8,10 @@ import SingUpPage from './component/SingUpPage';
 import LoginPage from './component/LoginPage';
 function App() {
   return (
-    <div >
-    
-<Navbar2/>
+    <div >     
+ <Navbar2/>
 <Homepage/>
-<Footer/>
+<Footer/> 
 
 {/*  My code Here ! */}
 {/* <LoginPage /> */}
