@@ -26,3 +26,11 @@ To get started with theStudentHelpDesk Platform, follow these steps:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-username/quizlet-like-platform.git](https://github.com/Diwakarsharma2216/actual-shoes-7533)https://github.com/Diwakarsharma2216/actual-shoes-7533
+
+## Contributing
+**We welcome contributions from the community to enhance the Quizlet-like Platform. The following contributors have helped in developing this platform:**
+
+**Diwakar Sharma**
+**Md Karam Khan**
+**Shiva Singh**
+**Pawan Saini**
