@@ -31,7 +31,7 @@ import Navbar2 from './Navbar2';
 const iniitalstate={
   email:"",
   password:"",
-  firstname:"",
+  name:"",
   img:""
 }
 const reducer=(state,action)=>{
@@ -43,7 +43,7 @@ const reducer=(state,action)=>{
   }
   case "firstname":{
     return {...state,
-      firstname:action.payload
+      name:action.payload
     }
   }
   case "img":{
@@ -80,7 +80,7 @@ const reducer=(state,action)=>{
     })
     
      }
-    const {email,password,firstname,img}=state
+    const {email,password,name,img}=state
     return (
         <>
 <Navbar2 />
@@ -111,7 +111,7 @@ const reducer=(state,action)=>{
                 <Box>
                   <FormControl id="firstName" isRequired>
                     <FormLabel>UserName</FormLabel>
-                    <Input type="text" value={firstname} onChange={(e)=>dispach({type:"firstname",payload:e.target.value})} />
+                    <Input type="text" value={name} onChange={(e)=>dispach({type:"firstname",payload:e.target.value})} />
                   </FormControl>
                 </Box>
                 <Box>

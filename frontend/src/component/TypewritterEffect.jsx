@@ -16,7 +16,7 @@ const TypewriterEffect = ({ data }) => {
     }
   }, [currentIndex, data]);
 
-  return <Text fontSize={{base:"21px",md:"30px"}} color='cyan'>
+  return <Text fontSize={{base:"21px",md:"30px"}} color="chakra-body-bg._dark">
   {text}
 </Text>
 };
