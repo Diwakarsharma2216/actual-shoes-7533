@@ -75,7 +75,7 @@ const [state,dispatch]=useReducer(reducer,initialstate)
     axios.get("https://actual-shoes-api.onrender.com/flesh/",{headers}).then((res)=>{
 
         setdata(res.data.data)
-        
+  
     })
     .catch((err)=>{
         console.log(err)
@@ -90,6 +90,7 @@ const handledelete=(id)=>{
    axios.delete(`https://actual-shoes-api.onrender.com/flesh/delete/${id}`,{headers})
    .then((res)=>{
     console.log(res)
+    alert("FleshCard deleted 😎")
    }).catch((err)=>{
     console.log(err)
    })
@@ -130,6 +131,7 @@ const handledelete=(id)=>{
            axios.post("https://actual-shoes-api.onrender.com/flesh/create",state,{headers})
            .then((res)=>{
             console.log(res)
+            alert("FleshCard Created 😎")
            }).catch((err)=>{
             console.log(err.message)
            })
@@ -228,23 +230,47 @@ const handledelete=(id)=>{
     
         {/* ##### Card Part Here ####### */}
         <Box mt={"10"} mb={3} m={"auto"} w={"50%"}  >
-  {data.length >0 && data ? data.map((el)=><Card mt={"5"} mb="5" >
-    <CardHeader>
-      <Heading size='md'>Title-:{el.title}</Heading>
-    </CardHeader>
-    <CardBody>
-      <Text>description:-{el.description}</Text>
-      <Text>term:-{el.term}</Text>
-      <Text>definition:-{el.definition}</Text>
-    </CardBody>
+  {data.length >0 && data ? data.map((el)=><Box mt={"5"} mb="5" >
+  <Box
+      p={6}
+      shadow="lg"
+      borderWidth="1px"
+      borderRadius="lg"
+      backgroundColor="white"
+      width="400px"
+    >
+      <Heading as="h2" size="lg" mb={4}>
+        {el.title}
+      </Heading>
+      <Text fontSize="sm" color="gray.500" mb={6}>
+        {description}
+      </Text>
+      <VStack alignItems="start" spacing={2}>
+        <Text fontWeight="bold" fontSize="lg" mb={1}>
+          Created by:
+        </Text>
+        <Text fontSize="md" mb={2}>
+          {el.username}
+        </Text>
+        <Text fontWeight="bold" fontSize="lg" mb={1}>
+          Term:
+        </Text>
+        <Text fontSize="md" mb={4}>
+          {el.term}
+        </Text>
+        <Text fontWeight="bold" fontSize="lg" mb={1}>
+          Definition:
+        </Text>
+        <Text fontSize="md">{el.definition}</Text>
+      </VStack>
     
-    <CardFooter>
-        <HStack>
+   
+        <HStack mt={"2"}>
       <Button  colorScheme='teal' variant='outline' onClick={()=>handleupdate(el._id)}><AiFillEdit  /></Button>
       <Button   textAlign={"center"} colorScheme='teal' variant='outline' onClick={()=>handledelete(el._id)}><AiFillDelete /></Button>
       </HStack>
-    </CardFooter>
-  </Card>) :"helo"}
+      </Box>
+  </Box>) :<Text fontSize={{base:"xl",md:"2xl"}} color={"red.300"}>Use the flashcard for remember the thing😎</Text>}
   
 </Box>
       </Box>
