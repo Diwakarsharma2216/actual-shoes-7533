@@ -1,10 +1,10 @@
 
 import { Box, Button, Container, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import Navbar2 from './Dropdown';
+import Navbar2 from './Navbar2';
 import axios from 'axios';
 import TypewriterEffect from './TypewritterEffect';
-import { Navbar } from './Navbar';
+
 import Footer from './Footer';
 
 const SingleUser = () => {
@@ -51,7 +51,7 @@ const SingleUser = () => {
 
   return (
   <> 
- <Navbar />
+ <Navbar2 />
     <Box mt={"4"}>
      
       <div style={{ backgroundColor: 'lightblue', padding: '20px', width: "80%", margin: "auto", borderRadius: "10px", borderTop: "20px" }}>

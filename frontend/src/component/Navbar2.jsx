@@ -4,13 +4,21 @@ import style from "../Style/Navbar.module.css"
 import { Button, Input } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown'
+import { useNavigate } from "react-router-dom";
 const Navbar2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+const handelclick=()=>{
+   let token=localStorage.getItem("token")
+   if(token){
+    navigate("/fleshcard")
+   }else{
+    alert("Please Login 😒")
+   }
+}
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -27,7 +35,9 @@ const Navbar2 = () => {
       backgroundColor:"#f6f7fb"
      }
      } placeholder='Study sets, textbooks, questions'/>
-        <Button style={{backgroundColor:"#4255ff",padding:"12px",borderRadius:"50%",color:"white"}} className="navbar-menu-item">+</Button>
+        <Button style={{backgroundColor:"#4255ff",padding:"12px",borderRadius:"50%",color:"white"}} className="navbar-menu-item"
+        onClick={handelclick}
+        >+</Button>
         <Link to="/login">
         <Button className="navbar-menu-item">Login</Button>
         </Link>

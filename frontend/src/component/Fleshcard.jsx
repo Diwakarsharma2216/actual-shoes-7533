@@ -22,6 +22,8 @@ import { CheckIcon } from '@chakra-ui/icons';
 import axios from 'axios';
 import Navbar2 from './Navbar2';
 import Footer from './Footer';
+import { AiFillDelete } from "react-icons/ai";
+import { AiFillEdit } from "react-icons/ai";
 const initialstate={
     title:"",
     description:"",
@@ -80,11 +82,11 @@ const [state,dispatch]=useReducer(reducer,initialstate)
     })
   },[data])
   // delete part here 
-const handledelete=(id)=>{
+const handleupdate=(id)=>{
 
 }
 
-const handleupdate=(id)=>{
+const handledelete=(id)=>{
    axios.delete(`https://actual-shoes-api.onrender.com/flesh/delete/${id}`,{headers})
    .then((res)=>{
     console.log(res)
@@ -98,7 +100,7 @@ const handleupdate=(id)=>{
     <Navbar2 />
     <Box
     mt={"3"}
-    mb={"3"}
+   
       minH={'100vh'}
       align={'center'}
       justify={'center'}
@@ -223,10 +225,10 @@ const handleupdate=(id)=>{
         </Text>
       </Container>
       <hr />
-      <Box>
+    
         {/* ##### Card Part Here ####### */}
-        <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
-  {data.length >0 && data ? data.map((el)=><Card>
+        <Box mt={"10"} mb={3} m={"auto"} w={"50%"}  >
+  {data.length >0 && data ? data.map((el)=><Card mt={"5"} mb="5" >
     <CardHeader>
       <Heading size='md'>Title-:{el.title}</Heading>
     </CardHeader>
@@ -238,15 +240,15 @@ const handleupdate=(id)=>{
     
     <CardFooter>
         <HStack>
-      <Button colorScheme='teal' variant='outline' onClick={()=>handledelete(el._id)}>Update</Button>
-      <Button colorScheme='teal' variant='outline' onClick={()=>handleupdate(el._id)}>Delete</Button>
+      <Button  colorScheme='teal' variant='outline' onClick={()=>handleupdate(el._id)}><AiFillEdit  /></Button>
+      <Button   textAlign={"center"} colorScheme='teal' variant='outline' onClick={()=>handledelete(el._id)}><AiFillDelete /></Button>
       </HStack>
     </CardFooter>
   </Card>) :"helo"}
   
-</SimpleGrid>
+</Box>
       </Box>
-    </Box>
+
     <Footer />
     </>
   );
