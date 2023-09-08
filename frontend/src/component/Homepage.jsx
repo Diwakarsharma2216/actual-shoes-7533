@@ -37,7 +37,7 @@ const Homepage = () => {
             <img src="https://images.prismic.io/quizlet-prod/31c85d7d-9e36-40a4-9fae-5027c355ddee_Flashcards-1.gif?auto=compress,format" alt="" />
         </div>
       </div>
-      <h1 className={style.youhead}>See our flashcards in action</h1>
+      <h1 className={style.youhead}>See our Flashcards in action</h1>
       <div id={style.youtube1}>
         <ReactPlayer width="63%" style={{height:"200%"}}  id={style.youtube} url="https://youtu.be/E-wY2mJVlu0"/>
       </div>
@@ -47,7 +47,7 @@ const Homepage = () => {
         </div>
         
         <div className={style.secondsection}>
-            <h1>Yesterday’s commute, today’s study session
+            <h1>Yesterday’s commute, Today’s study session
 </h1>
             <p>Study anywhere — even offline — with our iOS and Android apps. Your progress syncs across your phone and computer.
 
@@ -136,7 +136,7 @@ const Homepage = () => {
         <div>
             <img src="https://images.prismic.io/quizlet-prod/8568c5a7-2554-43c5-81bf-322169240769_Image+%2812%29.png?auto=compress,format&rect=0,4,310,228&w=286&h=210" alt="" />
             <h1>“Quizlet has been supporting my success since high school. Flashcards available on the go are single-handedly getting me through university.”</h1>
-            <p>Hamza, Senior, Medicine</p>
+            <p>Babalu, Senior, Medicine</p>
         </div>
         <div>
             <img src="https://images.prismic.io/quizlet-prod/17a32b86-e009-47f6-acb0-cdc8e89d35c4_06Sydney+1.png?auto=compress,format&rect=0,10,930,683&w=286&h=210" alt="" />
@@ -152,7 +152,7 @@ const Homepage = () => {
       <div className={style.seven}>
         <div>
         <h2>TEACHERS</h2>
-        <h1>Empower your students</h1>
+        <h1>Empower your Student</h1>
         <p>Engage and motivate all students with curriculum-based materials, in-class activities and at-home study tools on any topic. Quizlet is free for both you and your students to sign up.</p>
         <Button className={style.btn3} style={{backgroundColor:"#4255ff",color:"white",fontWeight:"bold"}}>Create a free account</Button>
        <div>
