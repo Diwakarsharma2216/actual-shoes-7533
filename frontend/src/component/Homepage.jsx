@@ -57,9 +57,11 @@ const Homepage = () => {
         
       </div>
       <div className={style.five}>
+
         <div>
             <Button style={{backgroundColor:"#ffcd1f"}}>Quizlet Plus</Button>
-            <h1>Be ready for test day with Learn and Test</h1>
+
+            <h1>Be ready for test day with Learn and Test , Give your Best</h1>
 
             <p>Go beyond memorization with different question types designed to help you really get it.</p>
             <div className={style.inner}>
